@@ -5,11 +5,13 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Media-Downloader-Data-Extraction/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Media-Downloader-Data-Extraction?style=social&color=white" alt="Repo Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Media-Downloader-Data-Extraction/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Media-Downloader-Data-Extraction?style=social&color=white" alt="Repo Forks" /></a>
-  <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Media-Downloader-Data-Extraction/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Media-Downloader-Data-Extraction"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
@@ -28,6 +30,8 @@ Whether you are building high-volume data harvesting pipelines, looking for an a
   - [🛠️ Additional Specialized Extraction Tools](#️-additional-specialized-extraction-tools)
 - [🏗️ Recommended Architecture & Frameworks](#️-recommended-architecture--frameworks)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
 - [⚖️ Disclaimer & Compliance](#️-disclaimer--compliance)
 
 ---
@@ -163,6 +167,24 @@ Community contributions and updates are welcome!
 2. 🌿 Create your feature branch (`git checkout -b feature/new-extractor-tool`).
 3. 📝 Update `README.md` following the established table / star-ranked schema.
 4. 🚀 Push changes and submit a detailed Pull Request.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated directory useful for your research, archival projects, or commercial stack evaluation, please consider supporting the project:
+
+- ⭐ **Star** this repository to show your appreciation and help others discover it.
+- 🍴 **Fork** and share it with fellow developers, archivists, and data engineers.
+- ☕ **Buy me a coffee / Sponsor**: Support continuous curation, updates, and maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Every bit of support helps keep this ecosystem index fresh, accurate, and independent!
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Media-Downloader-Data-Extraction&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Media-Downloader-Data-Extraction&type=date&legend=top-left)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Media-Downloader-Data-Extraction&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Media-Downloader-Data-Extraction&type=date&legend=top-left)
 
 ---
 
