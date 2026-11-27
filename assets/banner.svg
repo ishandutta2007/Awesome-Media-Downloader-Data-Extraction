@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        fill: url(#primaryGrad);
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+
+      /* Dynamic Animations (pure background/ambient to keep text sharp & in foreground) */
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(2deg); }
+      }
+      @keyframes floatRev {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(14px) rotate(-2deg); }
+      }
+      @keyframes pulseBeam {
+        0%, 100% { opacity: 0.25; stroke-dashoffset: 0; }
+        50% { opacity: 0.8; stroke-dashoffset: -50; }
+      }
+      @keyframes dataStream {
+        0% { stroke-dashoffset: 100; opacity: 0.3; }
+        50% { opacity: 0.9; }
+        100% { stroke-dashoffset: 0; opacity: 0.3; }
+      }
+      @keyframes ringPulse {
+        0% { r: 6; opacity: 0.8; }
+        50% { r: 12; opacity: 0.2; }
+        100% { r: 6; opacity: 0.8; }
+      }
+
+      .floating-node-1 { animation: floatSlow 7s ease-in-out infinite; }
+      .floating-node-2 { animation: floatRev 8.5s ease-in-out infinite; }
+      .pulse-line {
+        stroke-dasharray: 8, 8;
+        animation: pulseBeam 5s linear infinite;
+      }
+      .stream-line {
+        stroke-dasharray: 12, 12;
+        animation: dataStream 4s linear infinite;
+      }
+      .beacon-ring {
+        animation: ringPulse 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint / Dot Grid Pattern -->
+  <g opacity="0.12">
+    <circle cx="100" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="200" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="300" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="400" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="500" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="600" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="700" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="800" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="900" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="1000" cy="60" r="1.5" fill="#38bdf8" />
+    <circle cx="1100" cy="60" r="1.5" fill="#38bdf8" />
+
+    <circle cx="100" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="200" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="300" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="400" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="500" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="600" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="700" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="800" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="900" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="1000" cy="180" r="1.5" fill="#38bdf8" />
+    <circle cx="1100" cy="180" r="1.5" fill="#38bdf8" />
+
+    <circle cx="100" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="200" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="300" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="400" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="500" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="600" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="700" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="800" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="900" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="1000" cy="300" r="1.5" fill="#38bdf8" />
+    <circle cx="1100" cy="300" r="1.5" fill="#38bdf8" />
+  </g>
+
+  <!-- Ambient Dynamic Glowing Shapes in Background -->
+  <g filter="url(#glow)" opacity="0.4">
+    <circle cx="160" cy="90" r="70" fill="#0284c7" />
+    <circle cx="1050" cy="270" r="90" fill="#7c3aed" />
+    <circle cx="980" cy="80" r="60" fill="#0d9488" />
+  </g>
+
+  <!-- Background Data Flowlines & Mesh Connection Elements -->
+  <g>
+    <!-- Stream Vector Top Right to Center -->
+    <path d="M 820 40 Q 980 60 1120 130" fill="none" stroke="#38bdf8" stroke-width="2" class="stream-line" opacity="0.4" />
+    <path d="M 80 320 Q 300 310 460 340" fill="none" stroke="#818cf8" stroke-width="2" class="pulse-line" opacity="0.3" />
+    <path d="M 960 320 Q 1060 260 1140 280" fill="none" stroke="#c084fc" stroke-width="1.5" class="stream-line" opacity="0.4" />
+  </g>
+
+  <!-- Floating Ambient Graphic Pills/Cards on Left and Right (Kept clear from Center Text) -->
+  <!-- Left Side: Streaming / Media Ingestion Node -->
+  <g class="floating-node-1" transform="translate(65, 85)" filter="url(#softShadow)">
+    <rect width="180" height="64" rx="14" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1.5" />
+    <!-- Media Play Icon Inside Pill -->
+    <circle cx="34" cy="32" r="16" fill="url(#accentCyan)" />
+    <polygon points="30,24 42,32 30,40" fill="#ffffff" />
+    <text x="62" y="27" font-family="sans-serif" font-size="12" font-weight="700" fill="#38bdf8">MEDIA FETCH</text>
+    <text x="62" y="44" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">HLS / 4K / DASH</text>
+  </g>
+
+  <!-- Left Bottom: Scraper / Data Harvest Node -->
+  <g class="floating-node-2" transform="translate(90, 215)" filter="url(#softShadow)">
+    <rect width="195" height="64" rx="14" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1.5" />
+    <!-- Terminal / Scraper Icon -->
+    <circle cx="34" cy="32" r="16" fill="url(#accentPurple)" />
+    <text x="27" y="37" font-family="monospace" font-size="14" font-weight="bold" fill="#ffffff">&gt;_</text>
+    <text x="62" y="27" font-family="sans-serif" font-size="12" font-weight="700" fill="#c084fc">DATA EXTRACT</text>
+    <text x="62" y="44" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Pipelines &amp; APIs</text>
+  </g>
+
+  <!-- Right Side Top: Multi-Source Engine Node -->
+  <g class="floating-node-2" transform="translate(930, 75)" filter="url(#softShadow)">
+    <rect width="200" height="64" rx="14" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1.5" />
+    <circle cx="34" cy="32" r="16" fill="#0f766e" />
+    <circle cx="34" cy="32" r="8" fill="none" stroke="#2dd4bf" stroke-width="2" class="beacon-ring" />
+    <text x="62" y="27" font-family="sans-serif" font-size="12" font-weight="700" fill="#2dd4bf">MULTI-SOURCE</text>
+    <text x="62" y="44" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">2,000+ Providers</text>
+  </g>
+
+  <!-- Right Side Bottom: Storage / Cloud Node -->
+  <g class="floating-node-1" transform="translate(950, 205)" filter="url(#softShadow)">
+    <rect width="180" height="64" rx="14" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1.5" />
+    <circle cx="34" cy="32" r="16" fill="#1d4ed8" />
+    <path d="M26 34 A 5 5 0 0 1 31 30 A 6 6 0 0 1 41 31 A 4 4 0 0 1 42 36 L 26 36 Z" fill="#60a5fa" />
+    <text x="62" y="27" font-family="sans-serif" font-size="12" font-weight="700" fill="#60a5fa">SELF-HOSTED</text>
+    <text x="62" y="44" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Docker &amp; NAS Ready</text>
+  </g>
+
+  <!-- FOREGROUND: Centered Clean Title, Subtitle, and Feature Badges (Always clear & on top) -->
+  <g id="foregroundContent">
+    <!-- Top Pill Tag -->
+    <g transform="translate(460, 42)">
+      <rect width="280" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5" />
+      <circle cx="18" cy="16" r="5" fill="#38bdf8" />
+      <text x="32" y="21" class="badge-text" fill="#38bdf8">CURATED OPEN-SOURCE &amp; SAAS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="130" text-anchor="middle" class="title-text" filter="url(#softShadow)">
+      Media Downloader &amp; Data Extraction
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="172" text-anchor="middle" class="subtitle-text">
+      The definitive directory for high-speed video grabbers, web scrapers, and digital archiving engines
+    </text>
+
+    <!-- Interactive / Status Badges Row in Foreground -->
+    <g transform="translate(320, 220)">
+      <!-- Badge 1: yt-dlp Core -->
+      <g transform="translate(0, 0)">
+        <rect width="165" height="38" rx="8" fill="#111827" stroke="#374151" stroke-width="1.2" />
+        <circle cx="20" cy="19" r="4" fill="#22c55e" />
+        <text x="32" y="24" class="badge-text">⚡ yt-dlp &amp; IDM Core</text>
+      </g>
+
+      <!-- Badge 2: Video & HLS -->
+      <g transform="translate(180, 0)">
+        <rect width="180" height="38" rx="8" fill="#111827" stroke="#374151" stroke-width="1.2" />
+        <circle cx="20" cy="19" r="4" fill="#06b6d4" />
+        <text x="32" y="24" class="badge-text">📹 Video &amp; HLS Stream</text>
+      </g>
+
+      <!-- Badge 3: Web Scraping -->
+      <g transform="translate(375, 0)">
+        <rect width="185" height="38" rx="8" fill="#111827" stroke="#374151" stroke-width="1.2" />
+        <circle cx="20" cy="19" r="4" fill="#ec4899" />
+        <text x="32" y="24" class="badge-text">🕷️ Web Data Extraction</text>
+      </g>
+    </g>
+
+    <!-- Bottom Stat / Info Bar -->
+    <text x="600" y="305" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">
+      🔒 Ad-Free • 🌐 Privacy-Respecting • 📦 Docker &amp; CLI Ecosystem • 🚀 4K/8K &amp; Playlist Acceleration
+    </text>
+  </g>
+</svg>
