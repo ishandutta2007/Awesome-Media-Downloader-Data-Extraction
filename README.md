@@ -1,6 +1,6 @@
 # Awesome-Media-Downloader-Data-Extraction
 
-# Top Media Downloader & Data Extraction Ecosystem
+## Top Media Downloader & Data Extraction Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Video Fetching, Course Archiving & Web Data Extraction*  
